@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 import withAuth from '../withAuth';
 import Home from '../pages/home';
-import Chart from '../pages/chart';
-import Login from '../pages/login';
+import {Chart} from '../pages/chart';
+import {Login} from '../pages/login';
 
 export default class App extends Component {
 

@@ -1,4 +1,4 @@
-import Chart from './chart-view'
+import {Chart} from './chart-view'
 
 
-export default Chart;
+export {Chart}

@@ -8,7 +8,7 @@ import randomDataService from "../../../services/random"
 const NUM_VISIBLE_POINTS_ON_CHART = 10;
 const ANIMATION_DURATION_MS = 300;
 
-export default class Chart extends Component {
+export class Chart extends Component {
 
     constructor(props) {
         super(props);
