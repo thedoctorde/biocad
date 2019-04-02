@@ -7,7 +7,6 @@ export function loginTry(username, password) {
         try {
             const authData = await authService.Login(username, password);
             if (authData.username) {
-                debugger;
                 dispatch(loginSucceed(username))
             }  else {
                 dispatch(loginFailed());

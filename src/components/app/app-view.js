@@ -19,7 +19,8 @@ export default class App extends Component {
 
                 <Switch>
                     <Route path="/" exact component={Home} />
-                    <Route path="/chart" component={withAuth(Chart)} />
+                    {/*<Route path="/chart" component={withAuth(Chart)} />*/}
+                    <Route path="/chart" component={Chart} />
                     <Route path="/login" component={Login} />
                 </Switch>
             </div>
