@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import './message-form.css'
 
 export class MessageForm extends React.Component {
 
@@ -13,8 +14,11 @@ export class MessageForm extends React.Component {
 
     onSubmit = (event) => {
         event.preventDefault();
-        const {username, password} = this.state;
-        this.props.onSubmit(username, password)
+        const {message} = this.state;
+        this.props.onSubmit(message);
+        this.setState({
+            message: '',
+        })
     };
 
     handleInputChange = (event) => {

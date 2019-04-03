@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import {Message} from './message'
 import {MessageForm} from './message-form'
 
+import "./chat.css"
+
 export class Chat extends React.Component {
     static propTypes = {
         messages: PropTypes.array.isRequired,
@@ -13,7 +15,7 @@ export class Chat extends React.Component {
     render() {
         const {messages} = this.props;
         return (
-            <div>
+            <div className="chat-widget">
                 <div className={"message-list"}>
                     {
                         messages.map(message => {

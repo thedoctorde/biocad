@@ -14,8 +14,8 @@ export class Chat extends React.Component {
         messages: []
     };
 
-    onSendMessage = (username, text) => {
-        chatService.Send(username, text)
+    onSendMessage = (text) => {
+        chatService.Send(this.props.username, text)
     };
 
     onMessageReceive = (self) => (evt) => {

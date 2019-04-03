@@ -12,7 +12,7 @@ class ChatService {
         let data = JSON.stringify({
             username,
             text
-        })
+        });
         this.socket.send(data)
     }
 

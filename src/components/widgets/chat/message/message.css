@@ -1,0 +1,13 @@
+.message {
+    display: flex;
+}
+
+.message__user {
+}
+.message__user:after {
+    content: ':'
+}
+
+.message__text {
+    margin-left: 5px;
+}
